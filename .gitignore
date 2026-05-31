@@ -1,0 +1,11 @@
+# Obsidian configuration (optional, can be kept if desired)
+.obsidian/
+
+# Raw source materials — large PDFs not meant for version control
+raw/books/
+
+# Temporary files
+*.tmp
+lint_*.py
+lint_result*.txt
+pc_unit2.txt
