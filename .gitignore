@@ -4,8 +4,6 @@
 # Raw source materials — large PDFs not meant for version control
 raw/books/
 
-# Temporary files
+# Project maintenance — generated reports and temporary files
+.project/reports/
 *.tmp
-lint_*.py
-lint_result*.txt
-pc_unit2.txt

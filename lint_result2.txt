@@ -1,0 +1,10 @@
+=== Health Check Report ===
+
+--- Broken Links ---
+  No broken links
+
+--- Missing source/status ---
+  None missing
+
+--- Mixed Cyrillic/Latin tokens ---
+  No mixed tokens
