@@ -71,13 +71,15 @@ status: draft|needs-check|reviewed
 
 ### 已收录教材
 
-| 教材 | 类型 | 收录状态 |
-|------|------|----------|
-| *Modern Mongolian: A Course-Book* (John Gaunt, 2004) | 口语教材 | 已提取核心语法与例句 |
-| 清格尔泰《蒙古语语法（西里尔）》| 传统语法 | 已提取格体系、动词形态、句法、构词法等 |
-| Gaunt《现代蒙古语（西里尔）》在线版 | 在线教材 | 已提取疑问句、否定式、隐藏 g 名词、强调句等 |
-| **Peace Corps Pre-Service Training Book — Mongolian** | 培训教材 | **Unit 1 (Greetings) + Unit 2 (Family) 已提取**；Unit 3–9 待提取 |
-| Vacek & Lubsandorji《Mongolian Grammar Reference》| 语法参考书 | 扫描版，待 OCR，暂未提取正文 |
+| 教材 | 类型 | 来源与说明 | 收录状态 |
+|------|------|-----------|----------|
+| *Modern Mongolian: A Course-Book* (John Gaunt, 2004) | 口语教材 | 原版英文教材，269 页 | 已提取核心语法与例句 |
+| **清格尔泰《蒙古语语法（西里尔）》** | 传统语法 | 原著为老蒙文，由 **巴·达赖（海占）** 老师转写为西里尔文，发布于 [mongol-surah.github.io](https://mongol-surah.github.io/cyrillic/cyrillic-grammar/) | 已提取格体系、动词形态、句法、构词法等 |
+| **Gaunt《现代蒙古语（西里尔）》在线版** | 在线教材 | John Gaunt 原著的在线改编版，同样发布于 [mongol-surah.github.io](https://mongol-surah.github.io/cyrillic/gaunt-mongolian/) | 已提取疑问句、否定式、隐藏 g 名词、强调句等 |
+| **Peace Corps Pre-Service Training Book — Mongolian** | 培训教材 | Peace Corps 蒙古语培训教材，199 页 | **Unit 1 (Greetings) + Unit 2 (Family) 已提取**；Unit 3–9 待提取 |
+| Vacek & Lubsandorji《Mongolian Grammar Reference》| 语法参考书 | 425 页扫描版 PDF | 待 OCR，暂未提取正文 |
+
+> **关于 mongol-surah.github.io**：这是一个由志愿者维护的**开源蒙古语学习网站**（制作/维护者：yabuhu@proton.me），致力于将经典蒙古语教材转写为新蒙文（西里尔），方便现代学习者阅读。本站收录的《蒙古语语法》（清格尔泰著）和《现代蒙古语（西里尔）》均为**老蒙文→新蒙文的转写版本**，例句和术语保留了原著的学术体系。
 
 ### 已覆盖知识领域
 
@@ -133,7 +135,13 @@ status: draft|needs-check|reviewed
 
 - 本项目为**学习研究用途**，所有原始教材版权归 respective authors 及出版方所有。
 - 知识库中的结构化内容（页面组织、例句拆解、练习设计）由维护者与 LLM 协作生成，遵循中文学习者的认知路径重新编排。
-- 特别感谢 John Gaunt、清格尔泰、Peace Corps 等作者与机构提供的优质蒙古语学习材料。
+- 特别感谢：
+  - **John Gaunt** 与 **Routledge** 出版方提供的 *Colloquial Mongolian* 系列教材；
+  - **清格尔泰** 先生所著的系统语法书，为理解蒙古语奠定了学术基础；
+  - **巴·达赖（海占）** 老师将清格尔泰语法转写为西里尔文，极大便利了新蒙文学习者的阅读；
+  - **[mongol-surah.github.io](https://mongol-surah.github.io/)** 网站的志愿者团队（yabuhu@proton.me），将多部经典教材数字化并免费发布；
+  - **Peace Corps** 编写的实用培训教材；
+  - **Vacek & Lubsandorji** 撰写的深度语法参考书。
 
 ---
 

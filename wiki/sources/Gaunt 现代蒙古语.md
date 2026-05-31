@@ -10,9 +10,12 @@ related: [[蒙古语语法（西里尔）— 清格尔泰|清格尔泰语法]], 
 
 ## 基本信息
 
-- **作者**: John Gaunt & L.Bayarmandakh
+- **作者**: John Gaunt & L.Bayarmandakh（原著）
 - **语言**: 西里尔蒙文
 - **来源**: https://mongol-surah.github.io/cyrillic/gaunt-mongolian/
+- **网站**: [mongol-surah.github.io](https://mongol-surah.github.io/)（志愿者维护的开源蒙古语学习网站）
+
+> **说明**：本页面引用的并非 Gaunt 原著的纸质扫描版，而是 [mongol-surah.github.io](https://mongol-surah.github.io/) 网站发布的**在线改编版**。该网站由志愿者团队维护，将多部经典教材数字化并以新蒙文（西里尔）形式免费发布，方便现代学习者直接阅读。
 
 ---
 
