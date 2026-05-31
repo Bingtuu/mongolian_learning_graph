@@ -1,6 +1,8 @@
 ---
 title: 蒙古语知识库索引
 type: index
+category: 导航
+level: fundamental
 ---
 
 # 蒙古语知识库索引

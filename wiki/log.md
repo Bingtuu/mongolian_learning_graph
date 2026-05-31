@@ -1,6 +1,8 @@
 ---
 title: 操作日志
 type: log
+category: 运营
+level: fundamental
 ---
 
 # 操作日志
@@ -29,6 +31,20 @@ type: log
 | `refactor` | 大规模结构调整 | refactor \| 目录重组 |
 
 ---
+
+## [2026-05-31 14:00] lint & refactor | 合并规范文档 + 全库 Review 修复
+
+- **合并文档**: 将 `schema/AGENTS.md` 内容整合到 `CLAUDE.md`，AGENTS.md 重写为速查版本
+  - CLAUDE.md 新增 §3.3 页面最低内容要求、§10.2 九大原则
+- **创建规范页**: `wiki/rules/知识库扩展规范.md` — 源材料三级分级、合并四类型决策树、冲突解决规则
+- **全库 Review**（270 → 0 问题）:
+  - 修复 frontmatter: index.md / log.md 补齐 category/level；知识库扩展规范.md 补齐 source
+  - 批量修复例句来源: 31 个文件，185 个例句添加 `— 来源: [[...]] | 语法点: [[...]]`
+  - 修复断裂链接: 时间与数字.md / 交通与旅行.md 中 `[[从比格]]`→`[[离格]]`、`[[时间词]]`→`[[时位词]]`
+  - 修复 low_content: 为 6 个 rule 页面添加"常见错误"小节，为 5 个 example 页面添加"语法要点总结"
+  - 补充例句: 动词变位.md 新增 4 个完整格式例句
+  - 排除非例句误报: 提示块/表格行/规范示例不再计入例句来源检查
+- **健康检查**: 断裂链接 0，缺 source/status 0，混字 0，例句无来源 0，内容不足 0
 
 ## [2026-05-31 03:25] ingest | Modern Mongolian: A Course-Book (John Gaunt, 2004)
 
