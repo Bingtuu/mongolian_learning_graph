@@ -1,10 +1,13 @@
 === Health Check Report ===
 
 --- Broken Links ---
-  No broken links
+  wiki/entities/parts-of-speech/数词.md -> [[集合数词]]
+  wiki/examples/交通与旅行.md -> [[序数词]]
+  wiki/examples/交通与旅行.md -> [[集合数词]]
+  wiki/examples/时间与数字.md -> [[时间]]
 
 --- Missing source/status ---
   None missing
 
 --- Mixed Cyrillic/Latin tokens ---
-  No mixed tokens
+  wiki/log.md:40 word="дараa" latin chars: a
