@@ -49,6 +49,7 @@ type: index
 
 ## 最近更新
 
+- 2026-06-01 — Peace Corps Unit 3–4 提取完成，练习层补齐至阶段6，批量修复 87 个 needs-check 页面
 - 2026-05-31 — 全库 Review 修复（270 问题 → 0），建立知识库运营规范
 - 2026-05-31 — 初始化知识库结构，创建 25+ 页面
 - 2026-05-31 — 收录 *Modern Mongolian: A Course-Book* (John Gaunt, 2004)

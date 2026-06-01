@@ -76,7 +76,7 @@ status: draft|needs-check|reviewed
 | *Modern Mongolian: A Course-Book* (John Gaunt, 2004) | 口语教材 | 原版英文教材，269 页 | 已提取核心语法与例句 |
 | **清格尔泰《蒙古语语法（西里尔）》** | 传统语法 | 原著为老蒙文，由 **巴·达赖（海占）** 老师转写为西里尔文，发布于 [mongol-surah.github.io](https://mongol-surah.github.io/cyrillic/cyrillic-grammar/) | 已提取格体系、动词形态、句法、构词法等 |
 | **Gaunt《现代蒙古语（西里尔）》在线版** | 在线教材 | John Gaunt 原著的在线改编版，同样发布于 [mongol-surah.github.io](https://mongol-surah.github.io/cyrillic/gaunt-mongolian/) | 已提取疑问句、否定式、隐藏 g 名词、强调句等 |
-| **Peace Corps Pre-Service Training Book — Mongolian** | 培训教材 | Peace Corps 蒙古语培训教材，199 页 | **Unit 1 (Greetings) + Unit 2 (Family) 已提取**；Unit 3–9 待提取 |
+| **Peace Corps Pre-Service Training Book — Mongolian** | 培训教材 | Peace Corps 蒙古语培训教材，199 页 | **Unit 1–4 已提取**（问候、家庭、饮食、旅行）；Unit 5–9 待提取（衣着、购物、健康、天气、安全） |
 | Vacek & Lubsandorji《Mongolian Grammar Reference》| 语法参考书 | 425 页扫描版 PDF | 待 OCR，暂未提取正文 |
 
 > **关于 mongol-surah.github.io**：这是一个由志愿者维护的**开源蒙古语学习网站**（制作/维护者：yabuhu@proton.me），致力于将经典蒙古语教材转写为新蒙文（西里尔），方便现代学习者阅读。本站收录的《蒙古语语法》（清格尔泰著）和《现代蒙古语（西里尔）》均为**老蒙文→新蒙文的转写版本**，例句和术语保留了原著的学术体系。
@@ -88,7 +88,7 @@ status: draft|needs-check|reviewed
 - **动词语法**：现在时/将来时、过去时、习惯式、祈使式、否定式、进行体、习惯式（-даг）
 - **句法与语气**：SOV 语序、名词谓语、疑问句、强调句、主语标记 `нь`、助词 `ч`
 - **主题会话**：日常问候、自我介绍、家庭与人物、饮食、学校与工作、时间与数字、交通与旅行、购物
-- **练习层**：阶段1（字母与问候）、阶段2（自我介绍）、阶段3（家庭与数字）、元音和谐后缀选择
+- **练习层**：阶段1（字母与问候）、阶段2（自我介绍）、阶段3（家庭与数字）、阶段4（饮食与动词）、阶段5（交通与旅行）、阶段6（综合对话）、元音和谐后缀选择
 - **合成速查**：初学者语法路线图、动词形态速查指南、格用法对比、否定与疑问速查、蒙古语句型模板
 
 ### 质量指标（最新检查）
@@ -145,4 +145,25 @@ status: draft|needs-check|reviewed
 
 ---
 
-> **状态**：活跃维护中 · 当前阶段：Peace Corps Unit 2 已完成，下一步 Unit 3 (Food) 待提取。
+## 下一步计划
+
+### 近期（内容扩展）
+
+1. **Peace Corps Unit 5 (Clothes)** — 衣物词汇、偏好表达、适合/喜欢、频率副词
+2. **Peace Corps Unit 6 (Shopping)** — 购物对话、颜色、讨价还价、尺寸表达
+3. **阶段7练习** — 覆盖 Unit 5–6 内容的综合练习页
+
+### 中期（深化与校对）
+
+4. **Peace Corps Unit 7–9** — 健康、天气、安全主题（优先级较低，因相关语法点已通过其他教材覆盖）
+5. **Vacek 语法书 OCR** — 若获得可提取文本版本，用作核心语法页的二次校对来源
+6. **例句来源补全** — 为早期创建的 Gaunt/清格尔泰页面补充逐句来源标注
+
+### 远期（发布与工具）
+
+7. **静态网站发布** — 使用 Quartz 等工具将知识库发布为可公开浏览的网站
+8. **搜索与导航增强** — 添加标签云、语法点索引、难度过滤
+
+---
+
+> **状态**：活跃维护中 · 当前阶段：Peace Corps Unit 1–4 已完成，下一步 Unit 5 (Clothes) + Unit 6 (Shopping) 待提取。
