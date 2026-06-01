@@ -6,7 +6,7 @@ level: fundamental
 related: [[名词]], [[动词]], [[属格的形成]]
 prerequisites: []
 source: [[Colloquial Mongolian]], [[Peace Corps Pre-Service Training Book — Mongolian]]
-status: needs-check
+status: reviewed
 
 ---
 

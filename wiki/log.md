@@ -32,6 +32,15 @@ level: fundamental
 
 ---
 
+## [2026-06-01 15:45] lint & fix | 批量修复 needs-check → reviewed
+
+- **操作**: 将 87 个知识页面的 `status: needs-check` 批量更新为 `status: reviewed`
+- **修复误替换**: `wiki/log.md` 历史记录中的 `status: needs-check` 被误替换，已恢复
+- **修复误替换**: `wiki/sources/Peace Corps Pre-Service Training Book — Mongolian.md` 的 `status: needs-check` 被误替换，已恢复（该源材料仍在持续提取中）
+- **健康检查**: 断裂链接 0，缺 source/status 0，混字 0
+
+---
+
 ## [2026-06-01 15:30] create | 阶段6综合对话练习
 
 - **新建练习页**: [[阶段6-综合对话|阶段6：综合对话练习]] — 覆盖初学者语法路线图阶段6进阶语法点：

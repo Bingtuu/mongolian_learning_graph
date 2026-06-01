@@ -6,7 +6,7 @@ level: beginner
 related: [[名词]], [[名词变格]], [[名词的复数形式]]
 prerequisites: [[名词]], [[元音和谐律]]
 source: [[Colloquial Mongolian]], [[Gaunt 现代蒙古语]]
-status: needs-check
+status: reviewed
 ---
 
 # N-stem 名词 (N-stem Nouns / N үндэстэй нэр үг)

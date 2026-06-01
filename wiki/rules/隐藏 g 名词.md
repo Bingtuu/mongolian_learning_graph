@@ -6,7 +6,7 @@ level: beginner
 related: [[N-stem 名词]], [[名词变格]], [[属格的形成]]
 prerequisites: [[名词]], [[元音和谐律]]
 source: [[Gaunt 现代蒙古语]]
-status: needs-check
+status: reviewed
 ---
 
 # 隐藏 g 名词 (Hidden-g Nouns / нуусан г үндэстэй нэр үг)
