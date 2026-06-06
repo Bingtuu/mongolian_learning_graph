@@ -24,11 +24,17 @@ mongol_learning/
 ├── CLAUDE.md               # 本文件 — AI 编码规范（只读给 AI，用户可修改）
 ├── README.md               # 项目介绍（给人看）
 ├── .gitignore              # 排除 raw/books/、.obsidian/、临时文件
-├── prd/                    # 产品需求文档
 ├── raw/                    # 原始学习材料（只读，AI 从不修改）
+│   ├── MANIFEST.md         # 源材料清单（让 LLM 可发现所有 raw 资源）
 │   └── books/              # PDF 教材
-├── schema/                 # 模式定义与元规范
-│   └── AGENTS.md           # Agent 基础指令（被本文件覆盖/补充）
+├── .project/
+│   ├── docs/
+│   │   ├── CLAUDE.md       # 本文件 — 唯一 schema 规范
+│   │   ├── AGENTS.md       # 极简唤起标记，指向本文件
+│   │   ├── PRD/            # 产品需求文档
+│   │   └── README.md       # 项目背景说明
+│   ├── reports/            # 生成的检查报告
+│   └── scripts/            # 维护脚本（lint、fix、scan）
 ├── wiki/                   # 知识库核心（AI 全权负责创建和更新）
 │   ├── index.md            # 总索引（AI 必须在创建/更新页面后更新它）
 │   ├── log.md              # 操作日志（每次操作必须记录）
@@ -591,3 +597,110 @@ status: needs-check  # 当存在未解决冲突时
 |------|------|------|
 | 2026-05-31 | v1.0 | 初始版本，整合 AGENTS.md 与运营实践 |
 | 2026-05-31 | v1.1 | 合并 AGENTS.md 内容（最低内容要求、Query 流程、九大原则），重写 AGENTS.md 为速查版本 |
+| 2026-06-06 | v1.2 | 新增 Query→回写流程 (§14)、定期检查 (§15)、Obsidian 工具推荐 (§16)；创建 raw/MANIFEST.md 使 raw 层可发现；简化 AGENTS.md 为指针文件；目录结构调整 |
+
+
+---
+
+## 14. Query 流程 — 查询与回写循环（核心）
+
+> **Karpathy 核心理念**: "good answers can be filed back into the wiki as new pages... explorations compound in the knowledge base just like ingested sources do."
+
+查询不只是消费知识——它是知识库增长的第二引擎。每次查询的产出，只要包含有价值的分析、对比或综合，就应该被永久性地写回 wiki。
+
+### 14.1 查询→回写决策树
+
+```
+用户提出查询
+│
+├─ 答案仅仅是已有知识的引用/总结？
+│  └─ 无需回写（不产生新知识）
+│
+├─ 答案包含跨知识的综合分析？
+│  └─ 是否已有对应页面？
+│     ├─ 已有 → 更新该页面（补充分析、添加新角度）
+│     └─ 无 → 新建页面 → 类型判定：
+│        ├─ 对比类 → wiki/comparisons/
+│        ├─ 综合速查 → wiki/syntheses/
+│        ├─ 专项学习 → wiki/exercises/
+│        └─ 其他 → wiki/concepts/
+│
+└─ 答案暴露了知识库的空白/矛盾？
+   └─ 记录到 log.md，并建议用户补充源材料
+```
+
+### 14.2 回写日志格式
+
+在 log.md 中记录回写：
+
+```markdown
+## [YYYY-MM-DD HH:MM] enrich | 查询回写: <简短主题>
+
+- **触发查询**: 用户提问"..."后生成的综合分析
+- **回写类型**: 对比 | 综合 | 速查 | 练习 | 其他
+- **新建/更新**: [[新页面]]（或 更新: [[已有页面]]）
+- **内容概要**: 核心结论
+- **关联页面**: [[页面A]], [[页面B]]
+- **健康检查**: 通过
+```
+
+### 14.3 回写纪律
+
+- **非平凡查询必须评估回写价值**: 如果答案不仅仅是引用，就考虑是否值得写回
+- **优先合并到已有页面**: 避免碎片化（遵循 SSOT 原则）
+- **回写后必须更新 index.md**: 确保新页面可被发现
+- **首次回答时可同步回写**: 不必"先回答、后回写"两步走
+
+---
+
+## 15. 定期检查（Lint Schedule）
+
+> **Karpathy 建议**: "Periodically, ask the LLM to health-check the wiki."
+
+除每次操作后的即时 lint 外，还应安排定期全面检查。
+
+### 15.1 检查频率
+
+| 类型 | 频率 | 范围 |
+|------|------|------|
+| 即时 lint | 每次批量操作后 | 仅受影响页面 |
+| 每日 lint | 每天结束时 | 全库扫描 |
+| 深度 lint | 每周或每 7 次操作后 | 全库 + 矛盾检测 + 过时内容 |
+
+### 15.2 深度 lint 额外检查项
+
+除 §11 标准检查项外，定期 lint 还应检查：
+
+```
+□ 过时页面: status: draft 或 status: needs-check 的页面是否应升级？
+□ 跨页矛盾: 同一知识点在多页面的描述是否一致？
+□ 来源缺失: 较早创建的页面是否缺少 source 字段？
+□ 索引完整性: index.md 中的分类是否反映了当前页面分布？
+□ 孤立概念: wiki/concepts/ 中是否有页面引用了不存在的前置知识点？
+□ 增长趋势: 本周新增了多少页面？哪些分类增长最快？
+□ 建议任务: 根据当前知识库状态，推荐下一个最值得收录的源材料
+```
+
+### 15.3 lint 产出格式
+
+每次 lint 的结果应附加到 log.md 的对应操作记录中，并包含一个可操作的待办列表。
+
+---
+
+## 16. 推荐工具（Obsidian 生态）
+
+> **Karpathy 建议**: Obsidian 是 LLM Wiki 的 IDE。以下插件可大幅提升使用体验。
+
+| 工具/插件 | 用途 | Karpathy 原文引用 |
+|-----------|------|------------------|
+| **Obsidian Graph View** | 查看知识图谱——哪些页面是枢纽、哪些是孤岛 | "the best way to see the shape of your wiki" |
+| **Dataview** | 基于 YAML frontmatter 运行动态查询，生成表格和列表 | "can generate dynamic tables and lists" |
+| **Marp** | 基于 Markdown 的幻灯片格式，直接从 wiki 生成演示 | "useful for generating presentations directly from wiki content" |
+| **Obsidian Web Clipper** | 浏览器扩展，将网页文章转为 Markdown 存入 raw/ | "converts web articles to markdown" |
+
+### 16.1 配置建议
+
+- **Dataview**: 安装后，可在 wiki/index.md 中添加 Dataview 查询块
+- **Marp**: Obsidian 社区插件，可一键将 syntheses/ 中的速查导出为幻灯片
+- **Graph View**: 打开 Obsidian → Graph View → Filters 仅显示 wiki/ 范围
+- **下载图片到本地**: Obsidian 设置 → 文件与链接 → 附件文件夹路径设为 `raw/assets/`

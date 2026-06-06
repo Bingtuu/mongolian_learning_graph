@@ -22,9 +22,10 @@ type: index
 │   ├── syntheses/     ← 合成速查与路线图
 │   └── sources/       ← 源材料摘要
 ├── raw/               ← 原始学习材料（只读，PDF 等）
+│   ├── MANIFEST.md    ← 源材料清单（LLM 可发现所有 raw 资源）
 │   └── books/         ← 教材扫描件（已排除在版本控制外）
 └── .project/          ← 项目维护文件（Obsidian 默认隐藏）
-    ├── docs/          ← 规范文档（CLAUDE.md、AGENTS.md、README.md、prd/）
+    ├── docs/          ← 规范文档（CLAUDE.md、AGENTS.md、README.md）
     ├── scripts/       ← 维护脚本（review、lint、fix）
     └── reports/       ← 生成的检查报告（已排除在版本控制外）
 ```
