@@ -5,6 +5,19 @@ category: 运营
 level: fundamental
 ---
 
+## [2026-06-06 15:00] refactor | 工作流改进：纯文本参考层 + Knowledge-first 验证
+
+- **变更**: 将 Peace Corps 教材的 PDF 全量提取模式替换为混合方案
+- **新建纯文本层**: `raw/extracted/peace-corps/`（11 文件，296KB）— 一次提取，后续直接引用
+- **新建例句页**: [[衣着与购物]] — 基于 Knowledge-first 生成 + PDF 定向验证
+- **修正来源偏差**:
+  - Unit 6 实际主题为 People（外表/日常/感受），非原来的 Shopping
+  - 补充 Unit 10: Housing（住房/请求/投诉）
+  - 修正 Unit 6 起始页 99 → 107
+- **验证发现**: 9 处生成偏差（动词 4 处、对话 3 处、来源 2 处），已全部修正
+- **更新**: `raw/MANIFEST.md`、`wiki/sources/Peace Corps Pre-Service Training Book — Mongolian.md`
+- **健康检查**: 断裂链接 0，缺 source/status 0
+- **待办**: 提取 Unit 6-10 内容到 wiki 页面
 # 操作日志
 
 记录知识库的所有操作历史。按时间倒序排列。
